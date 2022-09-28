@@ -1,0 +1,32 @@
+/* THE HAUKAI RESTAURANT - CSS Document */
+
+/* Universal box sizing */
+* {box-sizing: border-box;}body {margin: 0;}
+/*FONT & HEADINGS*/
+h1{font-family:"GFS Didot",serif;color:#373F27;font-size:40px;}h2{font-family:"GFS Didot",serif;color:#aaa;font-size:30px;}h3{font-family:"Montserrat",sans-serif;color:#aaa;font-size:24px;font-weight:400;}p,body{font-family:"Montserrat",sans-serif;font-size:15px;font-weight:300;color:black;}.small{font-size:.7em;}.invert{color:white;font-size:2.5vh;}.heavy{font-weight:600;}.textleft{text-align:left;margin:1vw;}
+/* HEADER */
+header img{filter:brightness(.4);width:100%;}.hero-image{position:relative;text-align:center;}.centered{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}.centered img{max-width:75%;height:auto;filter:none;}
+/* NAVIGATION BAR */
+.topnav{overflow:hidden;background-color:#373F27;}.topnav a{float:left;display:block;color:white;font-size:16px;font-weight:500;text-align:center;padding:14px 20px;text-decoration:none;}.topnav a:hover,.topnav a:active{background-color:#D7CEC7;color:#373F27;}.topnav .icon{display:none;}
+/* BODY CONTAINERS */
+.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;}.column{float:left;width:33.33%;padding:2vw;text-align:center;}.column2{float:left;width:50%;padding:3vw;}.row:after{content:"";display:table;clear:both;}.center{-ms-flex:70%;flex:70%;background-color:white;padding:20px;text-align:center;}.narrow{-ms-flex:70%;flex:70%;background-color:white;padding:20px;margin-left:20%;margin-right:20%;text-align:center;}.left{padding:60px;padding-top:20px;text-align:left;float:left;}hr.solid{border-top:1px solid #373F27;}
+/* IMAGE & MEDIA FRAMES */
+.image{background-color:#D7CEC7;max-width:100%;padding:1vw;}iframe{border:10px solid #D7CEC7;}.responsive-iframe-container{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden}.responsive-iframe-container iframe,.vresponsive-iframe-container object,.vresponsive-iframe-container embed{position:absolute;top:0;left:0;width:100%;height:100%}
+/* RESPONSIVE LAYOUT */
+@media screen and (max-width:600px){.row{flex-direction:column}}@media screen and (max-width:600px){.topnav a:not(:first-child){display:none;}.topnav a.icon{float:right;display:block}}@media screen and (max-width:600px){.topnav.responsive{position:relative;}.topnav.responsive a.icon{position:absolute;right:0;top:0}.topnav.responsive a{float:none;display:block;text-align:left}}@media screen and (max-width:800px){.column{width:100%}}@media screen and (max-width:600px){.column,.column2,iframe,.centered{width:100%}}@media screen and (max-width:800px){.narrow{margin:auto}}@media screen and (max-width:800px){footer ul,footer li{display:inline-block;padding:10px auto;}}@media (max-width:600px){.big-container{display:none}}@media (min-width:600px){.small-container{display:none}}
+/* BUTTON LINKS */
+.button{background-color:#E9C904;border:3px solid #E9C904;padding:15px 25px;text-align:center;display:inline-block;cursor:pointer;}.button:hover{border:3px solid #373F27;}.button a:link,.button a:hover,.button a:active{display:inline-block;color:#373F27;font-weight:600;font-size:20px;text-decoration:none;}
+/* LINKS */
+a{color:#373F27;font-weight:300;text-decoration:underline;}a:hover{color:#373F27;font-weight:600;text-decoration:none;}
+/* LIST */
+ul{list-style-type:none;padding:0;margin:0}ul li{margin-top:-1px;padding:12px;font-weight:300;}ul.bullet{list-style-type:circle;padding:0;margin-left:70px}
+/* TABLES */
+table{width:100%;}td{padding:15px;}th{font-family:"Montserrat",sans-serif;color:#aaa;font-size:24px;font-weight:400;padding:15px;}
+/* FOOTER */
+footer{padding:5px;text-align:center;background:#D7CEC7;}footer img{max-width:50%;height:auto;}
+/* SOCIAL MEDIA ICONS */
+.fa{padding-top:10px;padding-bottom:0;font-size:26px;width:100%;text-shadow:2px 2px 4px #707070;text-align:center;text-decoration:none;display:block;}.fa:hover{opacity:.8;text-decoration:none;}.fa-instagram .fa-facebook .fa-twitter{background:none;color:#373F27;}i.social{display:inline-block;width:60px;}
+/* CONTACT US FORM */
+input[type=text],select,textarea{width:100%;padding:12px;border:1px solid #373F27;box-sizing:border-box;margin-top:6px;margin-bottom:16px;resize:vertical;outline:none;font-family:"Montserrat",sans-serif;color:black;font-size:14px;font-weight:300;}input[type=text]:focus,select:focus,textarea:focus{border:2px solid #E9C904;}input[type=number],select,textarea{width:100%;padding:12px;border:1px solid #373F27;box-sizing:border-box;margin-top:6px;margin-bottom:16px;resize:vertical;outline:none;font-family:"Montserrat",sans-serif;color:black;font-size:14px;font-weight:300;}input[type=number]:focus,select:focus,textarea:focus{border:2px solid #E9C904;}select{width:100%;padding:12px;border:1px solid #707070;box-sizing:border-box;margin-top:6px;margin-bottom:16px;font-family:"Montserrat",sans-serif;color:black;font-size:14px;font-weight:300;}input[type=submit]{background-color:#E9C904;color:#373F27;font-weight:500;padding:12px 20px;border:3px solid #E9C904;cursor:pointer;}input[type=submit]:hover{background-color:#E9C904;border:3px solid #373F27;color:#373F27;}.container{background-color:white;padding:20px;}
+/* NEWSLETTER SUBSCRIPTION FORM */
+form{border:none;}.container{padding:20px;}input[type=text],input[type=submit]{width:100%;padding:12px;margin:8px 0;display:inline-block;border:1px solid #373F27;box-sizing:border-box;}input[type=submit]{background-color:#E9C904;color:#373F27;border:3px solid #E9C904}input[type=submit]:hover{background-color:#E9C904;color:#373F27;border:3px solid #373F27;}

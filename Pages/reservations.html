@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><!--Language: English-->
+     <head>
+        <title>The Haukai Restaurant | Reservations</title><!--Page title for SEO-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Google Fonts: Didot and Montserrat-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+        <!--Social Media & Hamburger Nav Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Main CSS file for style-->
+        <link rel="stylesheet" type="text/css" href="../Assets/css/style.css">
+     </head>
+     <body>
+        <header id="top">
+			<nav class="topnav" id="myTopnav" role="menubar" aria-label="Main menu"><!--Horizontal Navigation Bar-->
+				<a href="../index.html">HOME</a>
+				<a href="about-us.html">ABOUT US</a>
+				<a href="menu.html">MENU</a>
+				<a href="reservations.html">RESERVATIONS</a>
+				<a href="contact.html">CONTACT</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Open the menu">
+                    <i class="fa fa-bars" aria-hidden="true" title="Menu"></i>
+                </a>
+			</nav>
+            <script>/* JS for the responsive Hamburger menu */
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+            </script>
+			<section class="hero-image"><!--Banner image in the header-->
+                <picture>
+                    <source srcset="../Assets/images/Mobile/Mobile_Reservations_stefan-schauberger-BTaUDmRUlZY-unsplash.jpg" media="(max-width: 600px)">
+                    <img src="../Assets/images/Reservations_stefan-schauberger-BTaUDmRUlZY-unsplash.jpg" alt="The Haukai Restaurant - Make a Reservation">
+                </picture>
+                <div class="centered"><!--Logo image & statement in the banner image-->
+                    <img src="../Assets/images/The-Haukai-Restaurant-Logo_White.png" alt="The Haukai Restaurant Logo"/>
+                    <h3 class="invert" style="font-size:2.5vw">experience the culture and cuisine of Aotearoa</h3>
+                </div>
+            </section>
+		</header>
+        <main>
+            <div class="narrow"><!--First Content Section: About Reservations-->
+                <h1><em>Whakakawhena</em> / Reservations</h1>
+                <p>Join us for a unique culinary experience - a journey into the history of Maori <em>kai</em> (food).</p>
+                <p>The restaurant is open weekly from Wednesday to Sunday, currently available for dinner only.</p>
+                <p>To make a booking please complete the form below to secure your reservation, or <a href="../Pages/contact.html#Contact_Us">contact us</a> during dining hours.</p><!--Link to Contact Form anchor on Contact Us page-->
+                <br><br><hr>
+            </div>
+			<div class="row">
+                <div class="center"><!--Second Content Section: Booking Form-->
+                    <h2>Booking Form</h2>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeB51xCLyr0xpV1PHJ3zRBCQIeVq7wcsORXeiTTDH6ddiMyLw/viewform?embedded=true" title="The Haukai Restaurant - Booking Form" width="700" height="700"></iframe>
+                </div>
+			</div>
+            <div class="row">
+                <div class="narrow">
+                    <a href="#top">RETURN TO TOP</a><!--Return to top of the page-->
+                </div>
+            </div>
+		</main>
+		<footer class="footer"><!--Footer-->
+			<div class="row">
+                <div class="column"><br><!--Sub-navigation links-->
+                    <ul>
+                        <li><a href="privacy-statement.html">Privacy Statement</a></li>
+                        <li><a href="contact.html">Location & Hours</a></li>
+                        <li><a href="hours.html">Staff Hours</a></li>
+                    </ul>
+				</div>
+				<div class="column"><!--Logo & copyright-->
+					<img src="../Assets/images/The-Haukai-Restaurant-Logo_Green.png" alt="The Haukai Restaurant Logo"/>
+					<p class="small">© Copyright 2022 by The Haukai Restaurant. All rights reserved.</p>
+				</div>
+				<div class="column"><br><!--Social media icons & links-->
+                    <p>Follow us on social media</p>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="View our Instagram"><i class="fa fa-instagram social" aria-hidden="true" title="Instagram: The Haukai Restaurant"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="View our Facebook"><i class="fa fa-facebook social" aria-hidden="true" title="Facebook: The Haukai Restaurant"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="View our Twitter"><i class="fa fa-twitter social" aria-hidden="true" title="Twitter: The Haukai Restaurant"></i></a><br><br>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
